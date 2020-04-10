@@ -10,6 +10,10 @@ public class Gamefield {
 		setFields();
 	}
 	
+	public Field[][] getFields() {
+		return fields;
+	}
+	
 	//Das Spielfeld leeren
 	public void resetGame() {
 		setFields();
@@ -23,27 +27,4 @@ public class Gamefield {
 			}
 		}
 	}
-	
-	
-	//Funktion zum Zeichnen der Felder
-	public void drawFields() {
-		System.out.println("Tiktaktoe Game:");
-		System.out.println();
-		System.out.println("  123");
-		System.out.print("1 ");
-		for (int x=0;x<3;x++) {
-			System.out.print(fields[x][0].getMarker().getSign());
-		}
-		System.out.println();
-		System.out.print("2 ");
-		for (int x=0;x<3;x++) {
-			System.out.print(fields[x][1].getMarker().getSign());
-		}
-		System.out.println();
-		System.out.print("3 ");
-		for (int x=0;x<3;x++) {
-			System.out.print(fields[x][2].getMarker().getSign());
-		}
-	}
-
 }

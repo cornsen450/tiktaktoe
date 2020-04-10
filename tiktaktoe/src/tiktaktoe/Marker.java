@@ -2,6 +2,9 @@ package tiktaktoe;
 
 public class Marker {
 	
+	//Name des Spielers
+	private String name;
+	
 	//Variablen für den Marker
 	private char sign;
 	
@@ -16,6 +19,14 @@ public class Marker {
 
 	public void setSign(char marker) {
 		this.sign = marker;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	

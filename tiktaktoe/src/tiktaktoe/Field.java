@@ -28,6 +28,10 @@ public class Field {
 	public Marker getMarker() {
 		return marker;
 	}
+	
+	public void setMarker(Marker marker) {
+		this.marker = marker;
+	}
 
 	public int getX() {
 		return X;
