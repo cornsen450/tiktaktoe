@@ -31,8 +31,10 @@ public class Maingame {
 		while (loop == true) {
 			c1.drawFields();
 			c1.askPlayer(player1);
+			c1.checkWin(game, game.getFields(), player1);
 			c1.drawFields();
 			c1.askPlayer(player2);
+			c1.checkWin(game, game.getFields(), player2);
 		}
 		
 		
